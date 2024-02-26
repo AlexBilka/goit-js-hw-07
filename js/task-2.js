@@ -58,10 +58,25 @@ function addNextThreeImages() {
     )
     .join('');
   galleryList.insertAdjacentHTML('beforeend', galleryItemsHTML);
+
   currentImageIndex += 3;
 }
 
+// виклик перших трьох елементів
 addNextThreeImages();
+
+// додаємо кнопку 'Add images'
+const contentWrap = document.querySelector('body');
+
+function addBtn() {
+  const imgBtn = `<button class="btn add-img" type="button">
+      Add images
+    </button>`;
+  contentWrap.insertAdjacentHTML('beforeend', imgBtn);
+}
+
+// виклик кнопки 'Add images'
+addBtn();
 
 // виклик наступних трьох елементів
 const addImages = document.querySelector('.add-img');
