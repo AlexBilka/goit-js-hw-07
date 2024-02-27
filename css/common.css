@@ -191,9 +191,10 @@ div#controls {
 
 .gallery {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  justify-content: space-between;
+  row-gap: 24px;
 }
 
 .gallery-item {
